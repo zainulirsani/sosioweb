@@ -94,7 +94,7 @@ export default function ProfilPage() {
               >
                 {/* Background Gradient Accent */}
                 <div
-                  className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-gradient-to-br ${member.color}`}
+                  className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-linear-to-br ${member.color}`}
                 />
 
                 {/* Content */}
@@ -102,14 +102,14 @@ export default function ProfilPage() {
                   {/* Icon Avatar */}
                   <div className="mb-6">
                     <div
-                      className={`w-20 h-20 rounded-2xl flex items-center justify-center text-4xl transform transition-all duration-500 group-hover:scale-110 bg-gradient-to-br ${member.color}`}
+                      className={`w-20 h-20 rounded-2xl flex items-center justify-center text-4xl transform transition-all duration-500 group-hover:scale-110 bg-linear-to-br ${member.color}`}
                     >
                       {member.icon}
                     </div>
                   </div>
 
                   {/* Member Info */}
-                  <div className="flex-grow">
+                  <div className="grow">
                     <h3
                       className="text-2xl font-bold mb-2 transition-colors duration-500"
                       style={{ color: "var(--primary-100)" }}
@@ -149,10 +149,7 @@ export default function ProfilPage() {
 
                 {/* Decorative Border - Hover Effect */}
                 <div
-                  className={`absolute inset-0 rounded-2xl pointer-events-none transition-all duration-500 ${hoveredId === member.id ? "ring-2" : "ring-1"}`}
-                  style={{
-                    ringColor: hoveredId === member.id ? "var(--accent-100)" : "var(--bg-300)",
-                  }}
+                  className={`absolute inset-0 rounded-2xl pointer-events-none transition-all duration-500 ${hoveredId === member.id ? "ring-2 ring-[var(--accent-100)]" : "ring-1 ring-[var(--bg-300)]"}`}
                 />
               </div>
             </div>
