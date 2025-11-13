@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 
 export default function ProfilPage() {
@@ -8,51 +9,45 @@ export default function ProfilPage() {
   const teamMembers = [
     {
       id: 1,
-      name: "Nama Anggota 1",
-      role: "Ketua Kelompok",
+      name: "Haniza Febriani",
+      role: "E1S02310044",
       contribution: "Mengorganisir proyek dan mengarahkan pengembangan konten utama",
-      color: "from-blue-500 to-cyan-500",
-      icon: "👑",
+      image: "/haniza.png",
     },
     {
       id: 2,
-      name: "Nama Anggota 2",
-      role: "Desainer & Developer",
-      contribution: "Merancang antarmuka dan mengimplementasikan struktur teknis website",
-      color: "from-purple-500 to-pink-500",
-      icon: "🎨",
+      name: "NADIA SYIFA UNNUFUS",
+      role: "E1S02310069",
+      contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran Nilai Sosial",
+      image: "/nadia.png",
     },
     {
       id: 3,
-      name: "Nama Anggota 3",
-      role: "Peneliti & Editor",
+      name: "Musahidin",
+      role: "E1S02310067",
       contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran",
-      color: "from-green-500 to-emerald-500",
-      icon: "📚",
+      image: "/musa.png",
     },
     {
       id: 4,
-      name: "Nama Anggota 4",
-      role: "Multimedia Specialist",
+      name: "HIRMA HAERUNNISA",
+      role: "E1S02310045",
       contribution: "Mengumpulkan dan mengintegrasikan infografis, video, dan media pembelajaran",
-      color: "from-orange-500 to-red-500",
-      icon: "🎬",
+      image: "/hirma.png",
     },
     {
       id: 5,
-      name: "Nama Anggota 5",
+      name: "Zahra",
       role: "Content Writer",
       contribution: "Menulis dan mengembangkan semua materi pembelajaran sosiologi dengan detail",
-      color: "from-indigo-500 to-blue-500",
-      icon: "✍️",
+      image: "/zahra.png",
     },
     {
       id: 6,
       name: "Nama Anggota 6",
       role: "Quality Assurance",
       contribution: "Memastikan kualitas konten dan pengalaman pengguna website yang optimal",
-      color: "from-pink-500 to-rose-500",
-      icon: "✨",
+      image: "/placeholder-user.jpg",
     },
   ]
 
@@ -94,17 +89,21 @@ export default function ProfilPage() {
               >
                 {/* Background Gradient Accent */}
                 <div
-                  className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-linear-to-br ${member.color}`}
+                  className={`absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500 bg-linear-to-br from-[--accent-100] to-[--accent-200]`}
                 />
 
                 {/* Content */}
                 <div className="relative p-8 h-full flex flex-col">
-                  {/* Icon Avatar */}
+                  {/* Profile Picture Avatar */}
                   <div className="mb-6">
-                    <div
-                      className={`w-20 h-20 rounded-2xl flex items-center justify-center text-4xl transform transition-all duration-500 group-hover:scale-110 bg-linear-to-br ${member.color}`}
-                    >
-                      {member.icon}
+                    <div className="w-24 h-24 rounded-full overflow-hidden transform transition-all duration-500 group-hover:scale-110">
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={96}
+                        height={96}
+                        className="object-cover w-full h-full"
+                      />
                     </div>
                   </div>
 
@@ -149,7 +148,7 @@ export default function ProfilPage() {
 
                 {/* Decorative Border - Hover Effect */}
                 <div
-                  className={`absolute inset-0 rounded-2xl pointer-events-none transition-all duration-500 ${hoveredId === member.id ? "ring-2 ring-[var(--accent-100)]" : "ring-1 ring-[var(--bg-300)]"}`}
+                  className={`absolute inset-0 rounded-2xl pointer-events-none transition-all duration-500 ${hoveredId === member.id ? "ring-2 ring-[--accent-100]" : "ring-1 ring-[--bg-300]"}`}
                 />
               </div>
             </div>
@@ -157,7 +156,7 @@ export default function ProfilPage() {
         </div>
 
         {/* Bottom Section - Team Stats */}
-        <div className="mt-20 pt-12 border-t" style={{ borderColor: "var(--bg-300)" }}>
+        {/* <div className="mt-20 pt-12 border-t" style={{ borderColor: "var(--bg-300)" }}>
           <div className="grid grid-cols-3 gap-4 md:gap-8">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold" style={{ color: "var(--primary-100)" }}>
@@ -184,7 +183,7 @@ export default function ProfilPage() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )
