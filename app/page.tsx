@@ -40,7 +40,7 @@ export default function BerandaPage() {
   return (
     <div style={{ backgroundColor: "var(--bg-100)" }}>
       {/* Hero Section - Modern Gradient Background */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 -z-10" />
 
         {/* Decorative shapes */}
@@ -57,7 +57,7 @@ export default function BerandaPage() {
             </span>
           </div>
 
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: "var(--text-100)" }}>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight" style={{ color: "var(--text-100)" }}>
             Pahami Masyarakat,
             <br />
             <span style={{ color: "var(--accent-100)" }}>Ubah Perspektif</span>

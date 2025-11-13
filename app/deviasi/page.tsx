@@ -14,7 +14,7 @@ export default function DeviasiPage() {
   return (
     <div style={{ backgroundColor: "var(--bg-100)" }}>
       <div className="max-w-7xl mx-auto px-4 py-12">
-        <h1 className="text-4xl font-bold mb-8" style={{ color: "var(--primary-100)" }}>
+        <h1 className="text-3xl sm:text-4xl font-bold mb-8" style={{ color: "var(--primary-100)" }}>
           Deviasi Sosial
         </h1>
 
@@ -78,14 +78,14 @@ export default function DeviasiPage() {
           {/* Infografis Tab */}
           {activeTab === "infografis" && (
             <div
-              className="p-16 rounded-lg flex items-center justify-center text-center"
-              style={{ backgroundColor: "var(--bg-200)", minHeight: "500px" }}
+              className="p-8 sm:p-16 rounded-lg flex items-center justify-center text-center min-h-[300px] sm:min-h-[500px]"
+              style={{ backgroundColor: "var(--bg-200)" }}
             >
               <div>
-                <div className="text-7xl mb-6" style={{ color: "var(--primary-100)" }}>
+                <div className="text-5xl sm:text-7xl mb-6" style={{ color: "var(--primary-100)" }}>
                   📈
                 </div>
-                <p className="text-2xl font-semibold" style={{ color: "var(--text-100)" }}>
+                <p className="text-xl sm:text-2xl font-semibold" style={{ color: "var(--text-100)" }}>
                   Infografis: Teori-Teori Deviasi Sosial
                 </p>
                 <p className="mt-4" style={{ color: "var(--text-200)" }}>
@@ -98,14 +98,14 @@ export default function DeviasiPage() {
           {/* Video Tab */}
           {activeTab === "video" && (
             <div
-              className="p-16 rounded-lg flex items-center justify-center text-center"
-              style={{ backgroundColor: "var(--bg-200)", minHeight: "500px" }}
+              className="p-8 sm:p-16 rounded-lg flex items-center justify-center text-center min-h-[300px] sm:min-h-[500px]"
+              style={{ backgroundColor: "var(--bg-200)" }}
             >
               <div>
-                <div className="text-7xl mb-6" style={{ color: "var(--accent-100)" }}>
+                <div className="text-5xl sm:text-7xl mb-6" style={{ color: "var(--accent-100)" }}>
                   🎬
                 </div>
-                <p className="text-2xl font-semibold" style={{ color: "var(--text-100)" }}>
+                <p className="text-xl sm:text-2xl font-semibold" style={{ color: "var(--text-100)" }}>
                   Studi Kasus Video: Contoh Deviasi dalam Masyarakat
                 </p>
                 <p className="mt-4" style={{ color: "var(--text-200)" }}>

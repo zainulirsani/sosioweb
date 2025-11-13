@@ -53,7 +53,7 @@ export default function ProfilPage() {
 
   return (
     <div style={{ backgroundColor: "var(--bg-100)" }} className="min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-block mb-4">
@@ -64,7 +64,7 @@ export default function ProfilPage() {
               Tentang Kami
             </span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6" style={{ color: "var(--primary-100)" }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6" style={{ color: "var(--primary-100)" }}>
             <span className="text-balance">Profil Kelompok Kami</span>
           </h1>
           <p className="text-lg max-w-2xl mx-auto" style={{ color: "var(--text-200)" }}>
@@ -93,10 +93,10 @@ export default function ProfilPage() {
                 />
 
                 {/* Content */}
-                <div className="relative p-8 h-full flex flex-col">
+                <div className="relative p-6 sm:p-8 h-full flex flex-col">
                   {/* Profile Picture Avatar */}
                   <div className="mb-6">
-                    <div className="w-24 h-24 rounded-full overflow-hidden transform transition-all duration-500 group-hover:scale-110">
+                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden transform transition-all duration-500 group-hover:scale-110">
                       <Image
                         src={member.image}
                         alt={member.name}
