@@ -41,7 +41,7 @@ export default function BerandaPage() {
     <div style={{ backgroundColor: "var(--bg-100)" }}>
       {/* Hero Section - Modern Gradient Background */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-cyan-50 -z-10" />
+        <div className="absolute inset-0 bg-linear-to-br from-blue-50 via-white to-cyan-50 -z-10" />
 
         {/* Decorative shapes */}
         <div className="absolute top-20 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />

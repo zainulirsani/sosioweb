@@ -27,7 +27,7 @@ export default function InteraksiSosialPage() {
   ]
 
   return (
-    <div style={{ backgroundColor: "var(--bg-100)" }}>
+    <div className="bg-linear-to-br from-green-50 via-white to-teal-50">
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Section 1: Definition */}
         <section className="mb-16">
@@ -69,19 +69,19 @@ export default function InteraksiSosialPage() {
             Analisis Video
           </h2>
 
-          <div
-            className="p-16 rounded-lg flex flex-col items-center justify-center text-center mx-auto max-w-2xl"
-            style={{ backgroundColor: "var(--bg-200)", minHeight: "400px" }}
-          >
-            <div className="text-6xl mb-6" style={{ color: "var(--accent-100)" }}>
-              ▶️
+          <div className="max-w-4xl mx-auto">
+            <div className="relative" style={{ paddingTop: "56.25%" }}>
+              <iframe
+                className="absolute top-0 left-0 w-full h-full rounded-lg"
+                src="https://www.youtube.com/embed/ushsEHIzvTY?modestbranding=1&rel=0"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
-            <p className="text-2xl font-semibold mb-4" style={{ color: "var(--text-100)" }}>
-              Video Pembelajaran: Interaksi Sosial dalam Kehidupan Sehari-hari
-            </p>
-            <p style={{ color: "var(--text-200)" }}>
+            <p className="mt-4 text-center" style={{ color: "var(--text-200)" }}>
               Saksikan contoh-contoh nyata berbagai bentuk interaksi sosial dan pahami dinamikanya dalam konteks
-              masyarakat modern
+              masyarakat modern.
             </p>
           </div>
         </section>

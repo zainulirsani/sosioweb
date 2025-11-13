@@ -8,7 +8,7 @@ export default function DeviasiPage() {
   const tabs = [
     { id: "penjelasan", label: "Penjelasan" },
     { id: "infografis", label: "Infografis" },
-    { id: "video", label: "Studi Kasus Video" },
+    { id: "video", label: "Video" },
   ]
 
   return (
@@ -97,21 +97,24 @@ export default function DeviasiPage() {
 
           {/* Video Tab */}
           {activeTab === "video" && (
-            <div
-              className="p-8 sm:p-16 rounded-lg flex items-center justify-center text-center min-h-[300px] sm:min-h-[500px]"
-              style={{ backgroundColor: "var(--bg-200)" }}
-            >
-              <div>
-                <div className="text-5xl sm:text-7xl mb-6" style={{ color: "var(--accent-100)" }}>
-                  🎬
+            <div>
+              <h2 className="text-2xl font-semibold mb-4" style={{ color: "var(--text-100)" }}>
+                Studi Kasus Video: Contoh Deviasi dalam Masyarakat
+              </h2>
+              <div className="max-w-4xl mx-auto">
+                <div className="relative" style={{ paddingTop: "56.25%" }}>
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg"
+                    src="https://www.youtube.com/embed/W4oYGYxbeHs?si=_FfwKtsPxjWAeMhh"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
                 </div>
-                <p className="text-xl sm:text-2xl font-semibold" style={{ color: "var(--text-100)" }}>
-                  Studi Kasus Video: Contoh Deviasi dalam Masyarakat
-                </p>
-                <p className="mt-4" style={{ color: "var(--text-200)" }}>
-                  Analisis mendalam tentang contoh-contoh nyata deviasi sosial dan dampaknya terhadap struktur sosial
-                </p>
               </div>
+              <p className="mt-4 max-w-4xl mx-auto" style={{ color: "var(--text-200)" }}>
+                Analisis mendalam tentang contoh-contoh nyata deviasi sosial dan dampaknya terhadap struktur sosial.
+              </p>
             </div>
           )}
         </div>
