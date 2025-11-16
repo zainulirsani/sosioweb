@@ -11,42 +11,42 @@ export default function ProfilPage() {
       id: 1,
       name: "Haniza Febriani",
       role: "E1S02310044",
-      contribution: "Mengorganisir proyek dan mengarahkan pengembangan konten utama",
+      // contribution: "Mengorganisir proyek dan mengarahkan pengembangan konten utama",
       image: "/haniza.png",
     },
     {
       id: 2,
       name: "NADIA SYIFA UNNUFUS",
       role: "E1S02310069",
-      contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran Nilai Sosial",
+      // contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran Nilai Sosial",
       image: "/nadia.png",
     },
     {
       id: 3,
       name: "Musahidin",
       role: "E1S02310067",
-      contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran",
+      // contribution: "Melakukan riset mendalam dan mengedit semua konten materi pembelajaran",
       image: "/musa.png",
     },
     {
       id: 4,
       name: "HIRMA HAERUNNISA",
       role: "E1S02310045",
-      contribution: "Mengumpulkan dan mengintegrasikan infografis, video, dan media pembelajaran",
+      // contribution: "#",
       image: "/hirma.png",
     },
     {
       id: 5,
       name: "Zahra",
-      role: "Content Writer",
-      contribution: "Menulis dan mengembangkan semua materi pembelajaran sosiologi dengan detail",
+      role: "E1S02310045",
+      // contribution: "#",
       image: "/zahra.png",
     },
     {
       id: 6,
-      name: "Nama Anggota 6",
-      role: "Quality Assurance",
-      contribution: "Memastikan kualitas konten dan pengalaman pengguna website yang optimal",
+      name: "Aziz",
+      role: "E1S02310045",
+      // contribution: "#",
       image: "/placeholder-user.jpg",
     },
   ]
@@ -121,12 +121,12 @@ export default function ProfilPage() {
                     >
                       {member.role}
                     </p>
-                    <p
+                    {/* <p
                       className="text-sm leading-relaxed transition-colors duration-500"
                       style={{ color: "var(--text-200)" }}
                     >
                       {member.contribution}
-                    </p>
+                    </p> */}
                   </div>
 
                   {/* Hover Bottom Accent */}
