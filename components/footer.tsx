@@ -5,7 +5,7 @@ export default function Footer() {
   const navLinks = [
     { href: "/", label: "Beranda" },
     { href: "/norma", label: "Norma" },
-    { href: "/deviasi", label: "Deviasi" },
+    { href: "/nilai-sosial", label: "Nilai Sosial" },
     { href: "/interaksi-sosial", label: "Interaksi Sosial" },
     { href: "/profil", label: "Profil" },
   ]

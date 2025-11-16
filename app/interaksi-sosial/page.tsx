@@ -1,28 +1,30 @@
+import Image from "next/image"
+
 export default function InteraksiSosialPage() {
   const interactionForms = [
     {
       id: 1,
       title: "Kerjasama",
       description: "Bentuk interaksi di mana individu bekerja bersama menuju tujuan bersama",
-      icon: "🤝",
+      image: "/intraksi-sosial/kerjasama.jpg",
     },
     {
       id: 2,
       title: "Konflik",
       description: "Perbedaan kepentingan yang mengarah pada pertentangan antar pihak",
-      icon: "⚡",
+      image: "/intraksi-sosial/konflik.jpg",
     },
     {
       id: 3,
       title: "Kompetisi",
       description: "Perjuangan untuk mendapatkan sumber daya atau prestise yang terbatas",
-      icon: "🏆",
+      image: "/intraksi-sosial/kompetisi.jpg",
     },
     {
       id: 4,
       title: "Akomodasi",
       description: "Usaha untuk mengurangi ketegangan dan mencapai keseimbangan",
-      icon: "⚖️",
+      image: "/intraksi-sosial/akomodasi.jpg",
     },
   ]
 
@@ -31,16 +33,26 @@ export default function InteraksiSosialPage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Section 1: Definition */}
         <section className="mb-16">
-          <div className="p-8 rounded-lg" style={{ backgroundColor: "var(--bg-200)" }}>
-            <h1 className="text-4xl font-bold mb-6" style={{ color: "var(--primary-100)" }}>
-              Apa itu Interaksi Sosial?
-            </h1>
-            <p className="text-lg leading-relaxed" style={{ color: "var(--text-200)" }}>
-              Interaksi sosial adalah hubungan sosial yang dinamis yang melibatkan hubungan antar individu, antar
-              kelompok, atau antara individu dan kelompok. Interaksi sosial adalah dasar dari semua aktivitas sosial dan
-              membentuk fondasi struktur sosial. Melalui interaksi, individu saling berkomunikasi, berbagi pengalaman,
-              dan secara bersama-sama menciptakan makna sosial.
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6 rounded-lg" style={{ backgroundColor: "var(--bg-200)" }}>
+            <div className="md:col-span-2">
+              <h1 className="text-4xl font-bold mb-6" style={{ color: "var(--primary-100)" }}>
+                Apa itu Interaksi Sosial?
+              </h1>
+              <p className="text-lg mb-2 leading-relaxed text-justify" style={{ color: "var(--text-200)" }}>
+                Interaksi sosial adalah konsep inti dalam sosiologi, yang didefinisikan sebagai suatu proses timbal balik (mutualistik) di mana satu individu atau kelompok mempengaruhi tingkah laku individu atau kelompok lain. Agar bisa disebut sebagai interaksi, proses ini harus memiliki maksud atau tujuan tertentu, serta memerlukan dua syarat utama: adanya kontak dan komunikasi. Kontak tidak harus selalu berarti sentuhan fisik; bisa juga berupa kontak mata atau saling memandang. Sementara itu, komunikasi adalah proses penyampaian pesan yang bisa terjadi secara verbal (lisan) maupun non-verbal (melalui gerak tubuh atau gestur).
+              </p>
+              <p className="text-lg my-2 leading-relaxed text-justify" style={{ color: "var(--text-200)" }}>
+                Setiap interaksi yang terjadi pasti akan membawa dampak terhadap perilaku orang lain, yang sekaligus menunjukkan kelebihan (manfaat) dari berinteraksi. Secara mendasar, interaksi sosial sangat penting untuk meningkatkan kesejahteraan emosional seseorang, membuat kita merasa terhubung dan didukung. Proses ini juga menjadi cara utama untuk memfasilitasi pertukaran informasi dan pengalaman, yang membantu kita belajar dan memahami dunia. Pada akhirnya, interaksi yang rutin akan memperkuat hubungan sosial (seperti ikatan keluarga dan pertemanan) serta memainkan peran krusial dalam pembentukan identitas, baik identitas individu maupun identitas kelompok.
+              </p>
+            </div>
+            <div className="flex items-center justify-end">
+              <img
+                src="/intraksi-sosial/poster.jpg" // Replace with actual image for definition section
+                alt="Ilustrasi Interaksi Sosial"
+                style={{ width: '400px', height: '600px' }}
+                className="object-cover rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </section>
 
@@ -53,7 +65,13 @@ export default function InteraksiSosialPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {interactionForms.map((form) => (
               <div key={form.id} className="p-8 rounded-lg text-center" style={{ backgroundColor: "var(--bg-200)" }}>
-                <div className="text-5xl mb-4">{form.icon}</div>
+                <Image
+                  src={form.image}
+                  alt={form.title}
+                  width={96}
+                  height={96}
+                  className="object-contain mx-auto mb-4 shadow-md rounded-lg"
+                />
                 <h3 className="text-xl font-bold mb-3" style={{ color: "var(--primary-100)" }}>
                   {form.title}
                 </h3>

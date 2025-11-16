@@ -18,10 +18,10 @@ export default function BerandaPage() {
       delay: "delay-0",
     },
     {
-      id: "deviasi",
-      title: "Deviasi Sosial",
-      description: "Pahami penyimpangan sosial dan dampaknya terhadap struktur masyarakat",
-      href: "/deviasi",
+      id: "nilai",
+      title: "Nilai Sosial",
+      description: "Pahami nilai-nilai sosial yang berkembang dalam masyarakat",
+      href: "/nilai",
       icon: Lightbulb,
       gradient: "from-cyan-500 to-blue-500",
       delay: "delay-100",
@@ -68,7 +68,7 @@ export default function BerandaPage() {
             style={{ color: "var(--text-200)" }}
           >
             Jelajahi konsep sosiologi yang mendalam melalui materi interaktif dan engaging. Temukan pemahaman baru
-            tentang norma, deviasi, dan interaksi sosial.
+            tentang norma, nilai, dan interaksi sosial.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
@@ -88,7 +88,7 @@ export default function BerandaPage() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-3 gap-4 md:gap-8 mt-12">
+          {/* <div className="grid grid-cols-3 gap-4 md:gap-8 mt-12">
             <div className="text-center">
               <div className="text-3xl md:text-4xl font-bold" style={{ color: "var(--primary-100)" }}>
                 5
@@ -107,7 +107,7 @@ export default function BerandaPage() {
               </div>
               <p className="text-sm text-gray-600 mt-1">Gratis</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

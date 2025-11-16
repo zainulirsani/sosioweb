@@ -11,7 +11,7 @@ export default function Navigation() {
   const navLinks = [
     { href: "/", label: "Beranda", id: "beranda" },
     { href: "/norma", label: "Norma", id: "norma" },
-    { href: "/deviasi", label: "Deviasi", id: "deviasi" },
+    { href: "/nilai-sosial", label: "Nilai Sosial", id: "nilai" },
     { href: "/interaksi-sosial", label: "Interaksi Sosial", id: "interaksi" },
     { href: "/profil", label: "Profil", id: "profil" },
   ]
