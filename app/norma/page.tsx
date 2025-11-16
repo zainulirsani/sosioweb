@@ -10,8 +10,8 @@ const normaPenjelasanData = [
     imageSrc: "/norma-sosial/penjelasan.jpg", // Placeholder image
     imageAlt: "Ilustrasi Pengertian Norma Sosial",
     layout: "image-right",
-    textColSpan: 4,
-    imageColSpan: 1,
+    textColSpan: 3,
+    imageColSpan: 2,
   },
   {
     title: "Jenis Norma Berdasarkan Tingkat Daya Ikatnya",
@@ -154,7 +154,7 @@ export default function NormaPage() {
                 <h3 className="text-lg font-semibold mb-4" style={{ color: "#522f05" }}>
                   Definisi dan Jenis Norma Berdasarkan Tingkat Daya Ikatnya
                 </h3>
-                <div className="w-[600px] h-[1250px] overflow-hidden rounded-lg shadow-lg"> {/* Adjusted for better display within typical screen sizes */}
+                <div className="w-full rounded-lg shadow-lg aspect-[2/4]"> {/* Adjusted for better display within typical screen sizes */}
                   <img
                     src="norma-sosial\norma-1.png" // Replace with actual infographic image path
                     alt="Infografis Definisi dan Fungsi Norma Sosial"
@@ -169,7 +169,7 @@ export default function NormaPage() {
                 <h3 className="text-lg font-semibold mb-4" style={{ color: "#522f05" }}>
                   Jenis-jenis Norma Sosial Berdasarkan Aspek dalam Masyarakat
                 </h3>
-                <div className="w-[600px] h-[1250px] overflow-hidden rounded-lg shadow-lg"> {/* Adjusted for better display within typical screen sizes */}
+                <div className="w-full rounded-lg shadow-lg aspect-[2/4]"> {/* Adjusted for better display within typical screen sizes */}
                   <img
                     src="norma-sosial\norma-2.png" // Replace with actual infographic image path
                     alt="Infografis Jenis-Jenis Norma Sosial"
