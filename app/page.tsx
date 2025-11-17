@@ -21,7 +21,7 @@ export default function BerandaPage() {
       id: "nilai",
       title: "Nilai Sosial",
       description: "Pahami nilai-nilai sosial yang berkembang dalam masyarakat",
-      href: "/nilai",
+      href: "/nilai-sosial",
       icon: Lightbulb,
       gradient: "from-cyan-500 to-blue-500",
       delay: "delay-100",
