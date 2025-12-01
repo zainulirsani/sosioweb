@@ -18,7 +18,7 @@ export default function ProfilPage() {
       id: 2,
       name: "NADIA SYIFA UNNUFUS",
       nim: "E1S02310069",
-      image: "/Nadia.png",
+      image: "/nadia.png",
       instagram: "https://www.instagram.com/nadiasyifaa.__",
     },
     {
