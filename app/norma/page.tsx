@@ -33,7 +33,7 @@ const normaPenjelasanData = [
         description: "Custom diidentikkan dengan adat-istiadat. Norma sosial ini memiliki ikatan paling kuat dibanding empat norma sebelumnya. Anggota masyarakat yang melanggar adat akan mendapat sanksi keras. Sebagai contoh, nembung (melamar) sebagai salah satu adat dari perkawinan di suatu desa.",
       },
     ],
-    imageSrc: "/placeholder.jpg", // Placeholder image
+    imageSrc: "/norma-sosial/norma-1.png", // Placeholder image
     imageAlt: "Ilustrasi Jenis Norma Berdasarkan Daya Ikat",
     layout: "image-left",
     textColSpan: 3,
@@ -63,7 +63,7 @@ const normaPenjelasanData = [
         description: "Adalah sekumpulan peraturan yang dibuat bersama secara sadar atau tidak menjadi sebuah kebiasaan. Sebagai contoh: menengok teman yang sakit, melayat, menghadiri undangan pernikahan, dan lain-lain.",
       },
     ],
-    imageSrc: "/placeholder.jpg", // Placeholder image
+    imageSrc: "/norma-sosial/norma-2.png", // Placeholder image
     imageAlt: "Ilustrasi Jenis Norma Berdasarkan Aspek",
     layout: "image-right",
     textColSpan: 3,
@@ -149,36 +149,89 @@ export default function NormaPage() {
 
           {/* Infografis Tab */}
           {activeTab === "infografis" && (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="p-4 rounded-lg flex flex-col items-center justify-center" style={{ backgroundColor: "var(--bg-200)" }}>
-                <h3 className="text-lg font-semibold mb-4" style={{ color: "#522f05" }}>
-                  Definisi dan Jenis Norma Berdasarkan Tingkat Daya Ikatnya
-                </h3>
-                <div className="w-full rounded-lg shadow-lg aspect-[2/4]"> {/* Adjusted for better display within typical screen sizes */}
-                  <img
-                    src="norma-sosial\norma-1.png" // Replace with actual infographic image path
-                    alt="Infografis Definisi dan Fungsi Norma Sosial"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                {/* <p className="mt-4 text-sm text-center" style={{ color: "var(--text-200)" }}>
-                  Visualisasi pengertian dan peran norma sosial dalam masyarakat.
-                </p> */}
+            <div className="space-y-6">
+              <div className="text-center mb-8">
+                <h2 className="text-2xl font-bold mb-2" style={{ color: "var(--primary-100)" }}>
+                  Infografis Norma Sosial
+                </h2>
+                <p className="text-base" style={{ color: "var(--text-200)" }}>
+                  Visualisasi lengkap tentang norma sosial
+                </p>
               </div>
-              <div className="p-4 rounded-lg flex flex-col items-center justify-center" style={{ backgroundColor: "var(--bg-200)" }}>
-                <h3 className="text-lg font-semibold mb-4" style={{ color: "#522f05" }}>
-                  Jenis-jenis Norma Sosial Berdasarkan Aspek dalam Masyarakat
-                </h3>
-                <div className="w-full rounded-lg shadow-lg aspect-[2/4]"> {/* Adjusted for better display within typical screen sizes */}
-                  <img
-                    src="norma-sosial\norma-2.png" // Replace with actual infographic image path
-                    alt="Infografis Jenis-Jenis Norma Sosial"
-                    className="w-full h-full object-cover"
-                  />
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                {/* Infographic 1 */}
+                <div className="group relative rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl" style={{ backgroundColor: "var(--bg-200)" }}>
+                  <div className="p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-4 text-center" style={{ color: "var(--primary-100)" }}>
+                      Definisi dan Jenis Norma Berdasarkan Tingkat Daya Ikatnya
+                    </h3>
+
+                    {/* Image Container */}
+                    <div className="relative w-full rounded-xl overflow-hidden" style={{ backgroundColor: "white" }}>
+                      <img
+                        src="/norma-sosial/norma-3.png"
+                        alt="Infografis Definisi dan Fungsi Norma Sosial"
+                        className="w-full h-auto object-contain"
+                        style={{ maxHeight: "900px" }}
+                      />
+                    </div>
+
+                    <p className="mt-4 text-sm text-center leading-relaxed" style={{ color: "var(--text-200)" }}>
+                      Visualisasi pengertian dan tingkatan norma sosial berdasarkan kekuatan daya ikatnya dalam masyarakat
+                    </p>
+                  </div>
+
+                  {/* Decorative Border */}
+                  <div className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300" style={{ border: "1px solid var(--bg-300)" }} />
+                  <div className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300 opacity-0 group-hover:opacity-100" style={{ border: "2px solid var(--primary-100)" }} />
                 </div>
-                {/* <p className="mt-4 text-sm text-center" style={{ color: "var(--text-200)" }}>
-                  Diagram dan penjelasan tentang berbagai jenis norma sosial.
-                </p> */}
+
+                {/* Infographic 2 */}
+                <div className="group relative rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl" style={{ backgroundColor: "var(--bg-200)" }}>
+                  <div className="p-6">
+                    <h3 className="text-lg sm:text-xl font-bold mb-4 text-center" style={{ color: "var(--primary-100)" }}>
+                      Jenis-jenis Norma Sosial Berdasarkan Aspek dalam Masyarakat
+                    </h3>
+
+                    {/* Image Container */}
+                    <div className="relative w-full rounded-xl overflow-hidden" style={{ backgroundColor: "white" }}>
+                      <img
+                        src="/norma-sosial/norma-4.png"
+                        alt="Infografis Jenis-Jenis Norma Sosial"
+                        className="w-full h-auto object-contain"
+                        style={{ maxHeight: "900px" }}
+                      />
+                    </div>
+
+                    <p className="mt-4 text-sm text-center leading-relaxed" style={{ color: "var(--text-200)" }}>
+                      Diagram dan penjelasan detail tentang berbagai jenis norma sosial berdasarkan aspeknya
+                    </p>
+                  </div>
+
+                  {/* Decorative Border */}
+                  <div className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300" style={{ border: "1px solid var(--bg-300)" }} />
+                  <div className="absolute inset-0 rounded-2xl pointer-events-none transition-all duration-300 opacity-0 group-hover:opacity-100" style={{ border: "2px solid var(--primary-100)" }} />
+                </div>
+              </div>
+
+              {/* Info Box */}
+              <div className="mt-8 p-6 rounded-xl" style={{ backgroundColor: "var(--bg-200)" }}>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center" style={{ backgroundColor: "var(--accent-100)" }}>
+                    <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="font-bold mb-1" style={{ color: "var(--primary-100)" }}>
+                      Informasi
+                    </h4>
+                    <p className="text-sm leading-relaxed" style={{ color: "var(--text-200)" }}>
+                      Infografis di atas menampilkan informasi lengkap tentang norma sosial dalam format visual yang mudah dipahami. Anda dapat memperbesar halaman browser untuk melihat detail lebih jelas.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           )}
@@ -193,11 +246,11 @@ export default function NormaPage() {
                 <div className="relative" style={{ paddingTop: "56.25%" }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/VrbnqB1eaFE?si=bLlKaRnXG-vn2578"
+                    src="https://www.youtube.com/embed/trbKUgyZuEI?si=V21XIE9eg1afkotb"
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen></iframe>
                 </div>
               </div>
               <p className="mt-4 text-sm text-center" style={{ color: "var(--text-200)" }}>

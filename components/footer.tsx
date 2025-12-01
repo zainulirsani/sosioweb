@@ -47,7 +47,7 @@ export default function Footer() {
           </div>
         </div> */}
         <div className="mt-8 border-t pt-8 text-center text-sm" style={{ borderColor: "var(--border-color)" }}>
-          <p style={{ color: "var(--text-200)" }}>© 2025 Sosiologi Kelompok X. All rights reserved.</p>
+          <p style={{ color: "var(--text-200)" }}>© 2025 Sosiologi Kelompok V. All rights reserved.</p>
         </div>
       </div>
     </footer>

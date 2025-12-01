@@ -139,11 +139,11 @@ export default function NilaiSosialPage() {
                 <div className="relative" style={{ paddingTop: "56.25%" }}>
                   <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/W4oYGYxbeHs?si=_FfwKtsPxjWAeMhh"
+                    src="https://www.youtube.com/embed/trbKUgyZuEI?si=V21XIE9eg1afkotb"
                     title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen></iframe>
                 </div>
               </div>
               <p className="mt-4 max-w-4xl mx-auto" style={{ color: "var(--text-200)" }}>
